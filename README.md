@@ -1,3 +1,6 @@
+**Note:** This fork has been made for an sklearn-like SAUCIE model specifically for dimensionality reduction.
+Installable via `pip install .`.
+
 # SAUCIE
 An implementation of SAUCIE (Sparse Autoencoder for Clustering, Imputing, and Embedding) in Tensorflow.
 
