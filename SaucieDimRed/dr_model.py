@@ -43,9 +43,9 @@ class DimRed:
         )
     
     def fit_transform(self, X, steps=1000):
-        train_loader = SAUCIE.Loader(X, shuffle=True)
+        train_loader = Loader(X, shuffle=True)
         self.model.train(train_loader, steps=steps)
-        eval_loader = SAUCIE.Loader(X, shuffle=False)
+        eval_loader = Loader(X, shuffle=False)
         embedding = self.model.get_embedding(eval_loader)
         return embedding
 
